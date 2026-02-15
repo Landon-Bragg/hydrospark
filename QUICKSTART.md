@@ -2,10 +2,6 @@
 
 ## ⚡ 1-Minute Setup
 
-### Step 1: Start the System
-```bash
-./start.sh
-```
 
 Or manually:
 ```bash
