@@ -161,7 +161,7 @@ CREATE TABLE IF NOT EXISTS audit_log (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- Insert default admin user (password: admin123)
-IINSERT INTO users (email, password_hash, role, first_name, last_name, is_active, is_approved)
+INSERT INTO users (email, password_hash, role, first_name, last_name, is_active, is_approved)
 VALUES ('admin@hydrospark.com', '$2b$12$K5iz3cTJHQFYQqP7VuGVMeZLmH7K7j8Z8f5VqB6LxR6IvJ8F1vD.e', 'admin', 'Admin', 'User', TRUE, TRUE);
 
 -- Insert default billing rates
