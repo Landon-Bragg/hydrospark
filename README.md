@@ -27,7 +27,7 @@ docker-compose up --build
 
 This will start:
 - **MySQL** on port 3307
-- **Backend API** on port 5000
+- **Backend API** on port 5001
 - **Frontend** on port 3000
 
 4. **Access the application**
