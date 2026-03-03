@@ -26,14 +26,11 @@ function Layout() {
                 <Link to="/dashboard" className="px-3 py-2 rounded-md hover:bg-hydro-spark-blue transition">Dashboard</Link>
                 <Link to="/usage" className="px-3 py-2 rounded-md hover:bg-hydro-spark-blue transition">Usage</Link>
                 <Link to="/forecasts" className="px-3 py-2 rounded-md hover:bg-hydro-spark-blue transition">Forecasts</Link>
-                <Link to="/bills" className="px-3 py-2 rounded-md hover:bg-hydro-spark-blue transition">Bills</Link>
+                <Link to={isAdmin ? "/admin/bills" : "/bills"} className="px-3 py-2 rounded-md hover:bg-hydro-spark-blue transition">Bills</Link>
                 <Link to="/alerts" className="px-3 py-2 rounded-md hover:bg-hydro-spark-blue transition">Alerts</Link>
                 <Link to="/meter-upload" className="px-3 py-2 rounded-md hover:bg-hydro-spark-blue transition">Meter</Link>
                 {isAdmin && (
-                  <>
-                    <Link to="/admin" className="px-3 py-2 rounded-md bg-hydro-green hover:bg-green-600 transition">Admin</Link>
-                    <Link to="/admin/bills" className="px-3 py-2 rounded-md bg-hydro-green hover:bg-green-600 transition">Customer Bills</Link>
-                  </>
+                  <Link to="/admin" className="px-3 py-2 rounded-md bg-hydro-green hover:bg-green-600 transition">Admin</Link>
                 )}
               </div>
             </div>
